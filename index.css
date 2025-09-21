@@ -1,0 +1,237 @@
+root {
+  /* Base */
+  --background: #f9f9f9;
+  --text-color: #333333;
+
+  /* Navbar */
+  --nav-bg: #212121;
+  --nav-text: #ffffff;
+  --nav-active: #ff9800;
+
+  /* Books Section */
+  --books-bg: #e8f0fe;
+  --progress-bar-fill: #4285f4;
+  --progress-bar-empty: #cfd8dc;
+  --button-bg: #1a73e8;
+  --button-text: #ffffff;
+
+  /* Notes Section */
+  --notes-bg: #fffde7;
+  --note-card-bg: #ffffff;
+  --note-date: #757575;
+  --highlight-text: #f9a825;
+}
+
+body{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--background);
+  color: var(--text-color);
+  padding-top: 5rem;
+  margin: 0;
+}
+#site-title{
+color: #f5f5f5;
+font-family: Arial, Helvetica, sans-serif;
+display: flex;
+flex-direction: row;
+}
+#tracker{
+color: #f6c90e;
+margin-left: 2px;
+}
+
+
+#header-nav{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 30px;
+  margin-right: 30px;
+  background-color:  #131212 ;
+  position: fixed;
+  top: 0;
+  left: ;
+  z-index: 1000;
+}
+
+nav{
+  padding: 40px;
+  font-size: 20px;
+  
+}
+
+nav a {
+text-decoration: none;
+margin: 0 15px;
+color: #f6c90e;
+}
+
+#add-book-section{
+  position: relative;
+  min-height: 100vh;
+  background-color: #2a2a2a;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5rem;
+  
+}
+.new-header{
+  
+  top: 2rem;
+  font-size: 2.5em;
+  color: #e8f0fe;
+}
+
+.new-book-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #2e2e2e;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  
+}
+#new-book-cover{
+  background-color: #424242;
+  width: 20vw;
+  height: 25rem;
+  margin-top: 3rem;
+}
+
+form{
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 10rem;
+}
+form input {
+  
+width: 20rem;
+height: 3rem;
+box-sizing: border-box;
+margin-bottom: 3rem;
+border-radius: 1rem;
+outline: none;
+border: 3px solid #353434;
+background-color: #212121;
+color: #e8f0fe;
+
+box-shadow: 1 1px 3px rgba(0, 0, 0, 0.1);
+
+}
+#currently-reading{
+  background-color: #212121;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  padding-top: 5rem;
+}
+#container-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #2e2e2e;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+#book-cover{
+  background-color: #424242;
+  height: 25rem;
+  width: 18rem;
+  margin-top: 3rem;
+  
+  
+}
+#header-two{
+font-size: 3rem;
+color: #e8f0fe;
+
+
+}
+.text-info{
+  font-size: 1.5rem;
+  
+}
+#progress-bar{
+  width: 30rem;
+  height: 3rem;
+  background-color: #f5f5f5;
+  border-radius: 1rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+#update-progress{
+  margin-top: 0;
+}
+#update-form{
+  padding: 0;
+}
+#update-form input{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 0;
+
+}
+.btn{
+  background-color: #f6c90e;
+}
+#book-progress{
+  display: flex;
+  flex-direction: column;
+}
+#pages-read{
+align-self: flex-end;
+margin: 1rem;
+}
+#Completed-books{
+  background-color:  #2a2a2a;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100vw;
+  padding-top: 5rem;
+}
+#notes-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #2e2e2e;
+  min-height: 100vh;
+  min-width:100vw;
+  padding-top: 5rem;
+}
+#Completed-section-header{
+  color: #f5f5f5;
+  font-size: 2.5rem;
+}
+#notes-section-header{
+  font-size: 2.5rem;
+  color: #f5f5f5;
+}
+#footer{
+  background-color:  #131212 ;
+  width: 100vw;
+  height: 4rem;
+}
+#books-et-progress{
+  display: grid;
+ grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+}
+#books-et-progress:has(:only-child){
+grid-template-columns: 1fr;
+}

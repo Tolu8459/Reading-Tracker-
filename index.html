@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reading tracker</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header id="header-nav">
+
+        <h1 id="site-title"><div> My Reading </div><div id="tracker">Tracker</div></h1>
+
+        <div id="header-div">
+           <nav>
+             <a href="#add-book-section"> add book</a>
+             <a href="#currently-reading"> currently reading</a>
+             <a href="#notes-section"> Notes</a>
+             <a href="#Completed-books"> Completed books</a>
+             <a href="#"> stats</a>
+            </nav>
+
+        </div>
+       
+    </header>
+    
+    <section id="add-book-section">
+        <h1 class="new-header"> Add new book </h1>
+        <div class="new-book-card" >
+            <div id="new-book-cover"></div>
+            <form id="book-form" action="">
+                <input type="text" placeholder="book title" name="title" id="input-title">
+                <div id="suggestion"></div>
+                <input type="text" placeholder="author" name="author">
+                <input type="text" placeholder="total pages" name="pages">
+                <input type="submit" value="Add book" class="btn">
+
+            
+            </form>
+        </div>    
+    </section>
+
+    <section id="currently-reading">
+        <h2 id="header-two"> currently reading</h2>
+
+        <div id="books-et-progress">
+            <div id="container-div" >
+                <div id="book-cover">
+
+                </div>
+
+
+                <div id="book-info">  
+                    <p class="book-title">Book title by : Toluwani Arogundade </p>
+                    <p class="book-date"> start date: </p>
+
+                </div>  
+                <div id="book-progress">
+                <div id="progress-bar"></div>
+                <div id="pages-read">120/300 </div>
+                <div id="pages-read">percentage complete</div>
+                </div>
+                <div id="update-progress">
+                    <form action="" id="update-form">
+                        <input type="number" name="" id="">
+                        <input type="submit" value="update-pages" class="btn">
+                    </form>
+
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="notes-section">
+        <h2 id="notes-section-header"> Notes</h2>
+        <div id="Note-holder">
+            <div id="note-date">
+
+            </div>
+            <div id="note-text"></div>
+            <div id="note-actions">
+
+            </div>
+
+        </div>
+
+        <div id="new-note">
+            <form action="">
+                <input type="text" placeholder="your new code">
+                <input type="submit" value="add note">
+            </form>
+
+        </div>
+
+
+    </section>
+
+    <section id="Completed-books">
+        <h1 id="Completed-section-header"> Completed Books</h1>
+        <div id="Completed-books-div"></div>
+
+        <div id="note-summary">
+            <p> Things i learned from this book</p>
+        </div>
+
+
+    </section>
+
+    <section id="stats-section">
+
+    </section>
+
+    <footer id="footer">
+
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
